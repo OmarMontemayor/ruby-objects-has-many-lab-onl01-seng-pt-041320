@@ -6,13 +6,10 @@ class Artist
   
   def initialize(name)
     @name = name
-    @songs = []
   end
   
   def add_song(song)
     song.artist = self
-    self.songs << song
-    binding.pry
   end
   
   def add_song_by_name(name)
@@ -22,7 +19,7 @@ class Artist
   end
   
   def songs
-    @songs
+    Song.all.select {|song| song.artist == self}
   end
   
   def self.song_count
