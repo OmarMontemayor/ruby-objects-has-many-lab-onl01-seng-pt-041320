@@ -5,6 +5,6 @@ class Author
   end
   
   def posts
-    
+    Post.all.select {|post| 
   end
 end
