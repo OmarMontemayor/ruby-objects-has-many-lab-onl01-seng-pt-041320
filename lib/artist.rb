@@ -12,6 +12,7 @@ class Artist
   def add_song(song)
     self.songs << song
     if song.artist == nil
+      
     @@song_count += 1
   end
   
