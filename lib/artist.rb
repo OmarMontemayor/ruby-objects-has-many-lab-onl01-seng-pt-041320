@@ -10,7 +10,8 @@ class Artist
   end
   
   def add_song(song)
-    if 
+    if song.artist != NIL || song.artist != @name
+      
     @@song_count += 1
   end
   
