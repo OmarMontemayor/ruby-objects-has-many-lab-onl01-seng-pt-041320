@@ -8,7 +8,7 @@ class Song
   end
   
   def artist=(artist)
-    @artist = 
+    @artist = Artist.new()
   
   def artist_name
     if self.artist
