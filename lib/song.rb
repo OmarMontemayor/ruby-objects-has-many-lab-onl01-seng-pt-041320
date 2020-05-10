@@ -7,7 +7,7 @@ class Song
     @@all << self
   end
   
-  def self.artist
+  def artist=(artist)
     @artist = Artist.new(artist)
   end
   
