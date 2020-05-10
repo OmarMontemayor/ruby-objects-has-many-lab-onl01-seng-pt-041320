@@ -9,7 +9,9 @@ class Song
   
   def artist=(artist)
     @artist = artist
-    if artist.add_song(self)
+    if artist.add_song(self) = nil
+      artist.add_song(self)
+    end
   end
   
   def artist_name
